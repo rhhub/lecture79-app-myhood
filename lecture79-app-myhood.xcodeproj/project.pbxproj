@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF514ACE1C51B16D0042E440 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF514ACD1C51B16D0042E440 /* Post.swift */; };
 		AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890531C51AE1E008D6880 /* AppDelegate.swift */; };
 		AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890551C51AE1E008D6880 /* ViewController.swift */; };
 		AF9890591C51AE1E008D6880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9890571C51AE1E008D6880 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF514ACD1C51B16D0042E440 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF9890501C51AE1E008D6880 /* lecture79-app-myhood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lecture79-app-myhood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9890531C51AE1E008D6880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF9890551C51AE1E008D6880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF514ACC1C51B1580042E440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF514ACD1C51B16D0042E440 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AF9890471C51AE1E008D6880 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		AF9890521C51AE1E008D6880 /* lecture79-app-myhood */ = {
 			isa = PBXGroup;
 			children = (
+				AF514ACC1C51B1580042E440 /* Model */,
 				AF9890531C51AE1E008D6880 /* AppDelegate.swift */,
 				AF9890551C51AE1E008D6880 /* ViewController.swift */,
 				AF9890571C51AE1E008D6880 /* Main.storyboard */,
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF514ACE1C51B16D0042E440 /* Post.swift in Sources */,
 				AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */,
 				AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +496,7 @@
 				AF98907A1C51AE1F008D6880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF98907B1C51AE1F008D6880 /* Build configuration list for PBXNativeTarget "lecture79-app-myhoodTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				AF98907D1C51AE1F008D6880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF98907E1C51AE1F008D6880 /* Build configuration list for PBXNativeTarget "lecture79-app-myhoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				AF9890801C51AE1F008D6880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
