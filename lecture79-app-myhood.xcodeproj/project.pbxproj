@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0851F31C52DCE800F1901E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0851F21C52DCE800F1901E /* PostCell.swift */; };
 		AF514ACE1C51B16D0042E440 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF514ACD1C51B16D0042E440 /* Post.swift */; };
 		AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890531C51AE1E008D6880 /* AppDelegate.swift */; };
 		AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890551C51AE1E008D6880 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0851F21C52DCE800F1901E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AF514ACD1C51B16D0042E440 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF9890501C51AE1E008D6880 /* lecture79-app-myhood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lecture79-app-myhood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9890531C51AE1E008D6880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0851F11C52DCA500F1901E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF0851F21C52DCE800F1901E /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		AF514ACC1C51B1580042E440 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				AF514ACC1C51B1580042E440 /* Model */,
+				AF0851F11C52DCA500F1901E /* View */,
 				AF9890531C51AE1E008D6880 /* AppDelegate.swift */,
 				AF9890551C51AE1E008D6880 /* ViewController.swift */,
 				AF9890571C51AE1E008D6880 /* Main.storyboard */,
@@ -270,6 +281,7 @@
 				AF514ACE1C51B16D0042E440 /* Post.swift in Sources */,
 				AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */,
 				AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */,
+				AF0851F31C52DCE800F1901E /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

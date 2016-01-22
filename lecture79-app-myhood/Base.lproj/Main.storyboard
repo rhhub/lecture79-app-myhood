@@ -19,9 +19,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WBN-9o-WQd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WBN-9o-WQd">
                                 <rect key="frame" x="20" y="100" width="560" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="86" id="Zbd-2J-l3F" customClass="PostCell" customModule="lecture79_app_myhood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zbd-2J-l3F" id="Bfa-gf-dQn">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="86"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-qz-tc7">
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Srb-qz-tc7" secondAttribute="height" multiplier="1:1" id="Dfb-1c-jx5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music man needs to go." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzk-Do-9e3">
+                                                    <rect key="frame" x="86" y="8" width="466" height="28"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="This text should wrapThis text should wrapThis text should wrapThis text should wrap" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ziJ-OS-Cod">
+                                                    <rect key="frame" x="86" y="37" width="466" height="41"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Srb-qz-tc7" firstAttribute="leading" secondItem="Bfa-gf-dQn" secondAttribute="leadingMargin" id="1aT-At-1Y9"/>
+                                                <constraint firstItem="Srb-qz-tc7" firstAttribute="bottom" secondItem="Bfa-gf-dQn" secondAttribute="bottomMargin" id="C6e-um-mMz"/>
+                                                <constraint firstItem="ziJ-OS-Cod" firstAttribute="trailing" secondItem="Bfa-gf-dQn" secondAttribute="trailingMargin" id="EMA-Bi-smN"/>
+                                                <constraint firstItem="jzk-Do-9e3" firstAttribute="trailing" secondItem="Bfa-gf-dQn" secondAttribute="trailingMargin" id="HEl-KZ-JeN"/>
+                                                <constraint firstItem="jzk-Do-9e3" firstAttribute="top" secondItem="Bfa-gf-dQn" secondAttribute="topMargin" id="I4q-2J-q0T"/>
+                                                <constraint firstItem="jzk-Do-9e3" firstAttribute="leading" secondItem="Srb-qz-tc7" secondAttribute="trailing" constant="8" id="L5M-ox-rVI"/>
+                                                <constraint firstItem="ziJ-OS-Cod" firstAttribute="bottom" secondItem="Bfa-gf-dQn" secondAttribute="bottomMargin" id="Of3-0z-yzp"/>
+                                                <constraint firstItem="ziJ-OS-Cod" firstAttribute="top" secondItem="jzk-Do-9e3" secondAttribute="bottom" constant="1" id="PkQ-fc-mc7"/>
+                                                <constraint firstItem="Srb-qz-tc7" firstAttribute="top" secondItem="Bfa-gf-dQn" secondAttribute="topMargin" id="qNC-XT-Q4u"/>
+                                                <constraint firstItem="ziJ-OS-Cod" firstAttribute="leading" secondItem="Srb-qz-tc7" secondAttribute="trailing" constant="8" id="qla-eY-em3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="descLabel" destination="ziJ-OS-Cod" id="zRV-If-RU0"/>
+                                            <outlet property="postImg" destination="Srb-qz-tc7" id="KHF-in-BCz"/>
+                                            <outlet property="titleLabel" destination="jzk-Do-9e3" id="TWu-1c-Miz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mE7-Ir-Xhb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
@@ -37,7 +85,7 @@
                                                 </constraints>
                                                 <state key="normal" image="camera"/>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ait-DI-pao">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ait-DI-pao">
                                                 <rect key="frame" x="241" y="8" width="118" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ait-DI-pao" secondAttribute="height" multiplier="259:97" id="ubw-k5-NAw"/>
@@ -83,6 +131,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WBN-9o-WQd" secondAttribute="bottom" constant="20" id="oGo-p7-s3R"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="WBN-9o-WQd" id="jaG-U9-Lxw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +142,7 @@
     </scenes>
     <resources>
         <image name="bannerlogo" width="518" height="194"/>
+        <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
     </resources>
 </document>
