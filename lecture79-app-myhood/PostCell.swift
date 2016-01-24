@@ -17,6 +17,9 @@ class PostCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        postImg.layer.cornerRadius = postImg.frame.size.width / 2
+        postImg.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -28,6 +31,7 @@ class PostCell: UITableViewCell {
     func configureCell(post: Post) {
         titleLabel.text = post.title
         descLabel.text = post.postDescription
+        postImg.image = DataService.instance.imageForPath(post.imagePath)
     }
 
 }

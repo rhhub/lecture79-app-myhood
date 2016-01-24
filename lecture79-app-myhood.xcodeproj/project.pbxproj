@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF0851F31C52DCE800F1901E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0851F21C52DCE800F1901E /* PostCell.swift */; };
+		AF0851F61C52E50F00F1901E /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0851F51C52E50F00F1901E /* AddPostViewController.swift */; };
+		AF0851FB1C55526900F1901E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0851FA1C55526900F1901E /* DataService.swift */; };
 		AF514ACE1C51B16D0042E440 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF514ACD1C51B16D0042E440 /* Post.swift */; };
 		AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890531C51AE1E008D6880 /* AppDelegate.swift */; };
 		AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9890551C51AE1E008D6880 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		AF0851F21C52DCE800F1901E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		AF0851F51C52E50F00F1901E /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		AF0851FA1C55526900F1901E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AF514ACD1C51B16D0042E440 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF9890501C51AE1E008D6880 /* lecture79-app-myhood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lecture79-app-myhood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9890531C51AE1E008D6880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +86,27 @@
 			isa = PBXGroup;
 			children = (
 				AF0851F21C52DCE800F1901E /* PostCell.swift */,
+				AF9890571C51AE1E008D6880 /* Main.storyboard */,
+				AF98905C1C51AE1E008D6880 /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		AF0851F41C52E4AE00F1901E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF9890551C51AE1E008D6880 /* ViewController.swift */,
+				AF0851F51C52E50F00F1901E /* AddPostViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF0851F71C5551B600F1901E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF0851FA1C55526900F1901E /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		AF514ACC1C51B1580042E440 /* Model */ = {
@@ -117,13 +140,12 @@
 		AF9890521C51AE1E008D6880 /* lecture79-app-myhood */ = {
 			isa = PBXGroup;
 			children = (
+				AF0851F71C5551B600F1901E /* Services */,
 				AF514ACC1C51B1580042E440 /* Model */,
 				AF0851F11C52DCA500F1901E /* View */,
+				AF0851F41C52E4AE00F1901E /* Controller */,
 				AF9890531C51AE1E008D6880 /* AppDelegate.swift */,
-				AF9890551C51AE1E008D6880 /* ViewController.swift */,
-				AF9890571C51AE1E008D6880 /* Main.storyboard */,
 				AF98905A1C51AE1E008D6880 /* Assets.xcassets */,
-				AF98905C1C51AE1E008D6880 /* LaunchScreen.storyboard */,
 				AF98905F1C51AE1E008D6880 /* Info.plist */,
 			);
 			path = "lecture79-app-myhood";
@@ -279,7 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF514ACE1C51B16D0042E440 /* Post.swift in Sources */,
+				AF0851F61C52E50F00F1901E /* AddPostViewController.swift in Sources */,
 				AF9890561C51AE1E008D6880 /* ViewController.swift in Sources */,
+				AF0851FB1C55526900F1901E /* DataService.swift in Sources */,
 				AF9890541C51AE1E008D6880 /* AppDelegate.swift in Sources */,
 				AF0851F31C52DCE800F1901E /* PostCell.swift in Sources */,
 			);
